@@ -217,7 +217,7 @@ export class AppService {
     }
   }
 
-  @Cron('0 0 1 * * *')
+  @Cron('0 0 */12 * * *')
   async autoUpdateSubs() {
     const channels: ChannelDTO[] = await this.channelRepository.find();
     const requests = [];
