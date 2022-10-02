@@ -8,7 +8,7 @@ export default {
     rpc: '/ᐠ｡ꞈ｡ᐟ\\',
     botId: configService.getClientId(),
     clientId: configService.getClientId(),
-    badgeColor: '#f97a50',
+    badgeColor: '#2f54eb',
     dslink: `https://discord.com/oauth2/authorize?client_id=${configService.getClientId()}&scope=bot&permissions=17179878400`,
   },
   yt_api_key: configService.getApiKey(),
