@@ -34,6 +34,6 @@ export default {
     youtubeVideoInfo: (videoId, apiKey) => {
       return `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`;
     },
-    callback: `http://${configService.getIp()}:${configService.getPort()}/live`,
+    callback: `http://${configService.getIp()}:${configService.getPort()}`,
   },
 };
