@@ -150,7 +150,6 @@ export class AppService {
 
         const newLive = new VideoEntity();
         Object.assign(newLive, {
-          id: null,
           channelId: channelId,
           videoId: videoId,
           url: config.dataUrls.youtubeVideo(videoId),

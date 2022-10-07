@@ -5,6 +5,7 @@ import {
   GatewayIntentBits,
 } from 'discord.js';
 import { NestFactory } from '@nestjs/core';
+import * as xmlparser from 'express-xml-bodyparser';
 
 import { AppService } from './app.service';
 import { AppModule } from './app.module';
@@ -26,6 +27,7 @@ const client = new Client({
 
 async function App() {
   const app = await NestFactory.create(AppModule);
+  app.use(xmlparser());
   await app.listen(configService.getPort());
   const service = app.get<AppService>(AppService);
 
